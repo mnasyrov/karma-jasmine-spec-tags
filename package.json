@@ -12,6 +12,7 @@
   },
   "keywords": [
     "karma",
+    "karma-plugin",
     "jasmine",
     "tag",
     "filter",
