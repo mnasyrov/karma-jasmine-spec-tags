@@ -1,0 +1,30 @@
+{
+  "name": "karma-jasmine-spec-tags",
+  "version": "1.0.0",
+  "description": "A plugin for karma-jasmine. Allows to filter tests (specs) by tags.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnasyrov/karma-jasmine-spec-tags.git"
+  },
+  "keywords": [
+    "karma",
+    "jasmine",
+    "tag",
+    "filter",
+    "test",
+    "spec"
+  ],
+  "author": "Mikhail Nasyrov (http://mnasyrov.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mnasyrov/karma-jasmine-spec-tags/issues"
+  },
+  "homepage": "https://github.com/mnasyrov/karma-jasmine-spec-tags#readme",
+  "peerDependencies": {
+    "karma-jasmine": "*"
+  }
+}
