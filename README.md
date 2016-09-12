@@ -7,7 +7,7 @@ Usage example:
     $ karma start --tags smoke
     $ karma start --skip-tags slow,bench
     $ karma start --tags bench --skip-tags slow
-    $ karma start --tag-prefix 'scope:' --tag critical
+    $ karma start --tag-prefix 'scope:' --tags critical
     
 Where tags are defined in spec names:
 
