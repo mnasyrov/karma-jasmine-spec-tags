@@ -1,6 +1,6 @@
 {
   "name": "karma-jasmine-spec-tags",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A plugin for karma-jasmine. Allows to filter tests (specs) by tags.",
   "author": "Mikhail Nasyrov (http://mnasyrov.com)",
   "license": "MIT",
