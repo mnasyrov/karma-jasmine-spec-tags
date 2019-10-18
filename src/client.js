@@ -17,7 +17,7 @@
         });
     }
 
-    var specFilterFnDelegate = jasmineEnv.configuration.specFilter;
+    var specFilterFnDelegate = jasmineEnv.configuration().specFilter;
     jasmineEnv.configure({ specFilter: customSpecFilter });
 
     function parseTags(tags) {
