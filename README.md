@@ -1,7 +1,7 @@
 # karma-jasmine-spec-tags
 
 [![npm version](https://badge.fury.io/js/karma-jasmine-spec-tags.svg)](https://www.npmjs.com/karma-jasmine-spec-tags)
-[![build Status](https://travis-ci.org/mnasyrov/karma-jasmine-spec-tags.svg?branch=master)](https://travis-ci.org/mnasyrov/karma-jasmine-spec-tags)
+[![Node CI](https://github.com/mnasyrov/karma-jasmine-spec-tags/workflows/Node%20CI/badge.svg)](https://github.com/mnasyrov/karma-jasmine-spec-tags/actions?workflow=Node+CI)
 
 
 A plugin for `karma-jasmine` which helps to filter tests (specs) by tags. 
