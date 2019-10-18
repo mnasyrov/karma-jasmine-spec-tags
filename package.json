@@ -2,7 +2,7 @@
   "name": "karma-jasmine-spec-tags",
   "version": "1.1.0",
   "description": "A plugin for karma-jasmine. Allows to filter tests (specs) by tags.",
-  "author": "Mikhail Nasyrov (http://mnasyrov.com)",
+  "author": "Mikhail Nasyrov (https://mnasyrov.com)",
   "license": "MIT",
   "homepage": "https://github.com/mnasyrov/karma-jasmine-spec-tags#readme",
   "repository": {
@@ -27,11 +27,11 @@
     "karma-jasmine": "*"
   },
   "devDependencies": {
-    "jasmine": "3.4.0",
-    "jsdom": "14.0.0",
-    "karma": "4.0.1",
+    "jasmine": "3.5.0",
+    "jsdom": "15.2.0",
+    "karma": "4.4.0",
     "karma-jasmine": "2.0.1",
-    "karma-jsdom-launcher": "7.1.0",
+    "karma-jsdom-launcher": "8.0.0",
     "nixt": "0.5.1"
   },
   "scripts": {
