@@ -68,5 +68,7 @@ describe('Karma integration test', function () {
 });
 
 function parseKarmaLogOutput(output) {
+    console.log('KARMA OUTPUT', output);
+
     return output.match(/LOG: .+$/gm);
 }
