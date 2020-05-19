@@ -4,11 +4,10 @@
     var DEFAULT_TAG_PREFIX = '#';
 
     var karma = window.__karma__;
-    var jasmineEnv = jasmine.getEnv();
-
-    var tagPrefix = karma.config.tagPrefix || DEFAULT_TAG_PREFIX;
-    var tags = parseTags(karma.config.tags);
-    var skipTags = parseTags(karma.config.skipTags);
+    var clientConfig = karma.config || {};
+    var tagPrefix = clientConfig.tagPrefix || DEFAULT_TAG_PREFIX;
+    var tags = parseTags(clientConfig.tags);
+    var skipTags = parseTags(clientConfig.skipTags);
 
     // skipTags must not contain tags values.
     if (Array.isArray(tags) && Array.isArray(skipTags)) {
@@ -17,8 +16,18 @@
         });
     }
 
-    var specFilterFnDelegate = jasmineEnv.configuration().specFilter;
-    jasmineEnv.configure({ specFilter: customSpecFilter });
+    var specFilterFnDelegate;
+    var jasmineEnvExecute;
+
+    var jasmineEnv = jasmine.getEnv();
+    if (!jasmineEnvExecute) {
+        jasmineEnvExecute = jasmineEnv.execute;
+        jasmineEnv.execute = function () {
+            specFilterFnDelegate = jasmineEnv.configuration().specFilter;
+            jasmineEnv.configure({specFilter: customSpecFilter});
+            jasmineEnvExecute.apply(jasmineEnv, arguments);
+        }
+    }
 
     function parseTags(tags) {
         tags = tags || [];
