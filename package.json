@@ -29,7 +29,7 @@
   "devDependencies": {
     "jasmine": "3.5.0",
     "jsdom": "16.5.0",
-    "karma": "5.0.7",
+    "karma": "6.4.1",
     "karma-jasmine": "3.1.1",
     "karma-jsdom-launcher": "8.0.2",
     "nixt": "0.5.1"
