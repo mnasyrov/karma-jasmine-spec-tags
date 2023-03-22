@@ -23,15 +23,16 @@
   ],
   "main": "index.js",
   "peerDependencies": {
-    "jasmine": "^3.3.0",
+    "jasmine": ">=4 || >=5",
+    "karma": ">=6.0.4",
     "karma-jasmine": "*"
   },
   "devDependencies": {
-    "jasmine": "3.5.0",
-    "jsdom": "16.5.0",
-    "karma": "5.0.7",
-    "karma-jasmine": "3.1.1",
-    "karma-jsdom-launcher": "8.0.2",
+    "jasmine": "4.6.0",
+    "jsdom": "21.1.1",
+    "karma": "6.4.1",
+    "karma-jasmine": "5.1.0",
+    "karma-jsdom-launcher": "14.0.0",
     "nixt": "0.5.1"
   },
   "scripts": {
